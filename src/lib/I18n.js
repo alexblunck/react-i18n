@@ -1,4 +1,4 @@
-import get from 'lodash.get'
+import { get } from 'dot-prop'
 import Base from './Base'
 
 export default {
@@ -19,7 +19,7 @@ export default {
         const path = `${this._locale}.${key}`
         const translation = get(this._translations, path)
 
-        return translation
+        return translation || key
     },
 
     forceComponentUpdate() {

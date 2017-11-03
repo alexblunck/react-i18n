@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/alexblunck/react-i18n#readme",
   "dependencies": {
-    "lodash.get": "^4.4.2",
+    "dot-prop": "^4.2.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0"
   },
