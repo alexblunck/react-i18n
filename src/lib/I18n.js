@@ -1,4 +1,4 @@
-import { get } from 'dot-prop'
+import { get } from 'object-path'
 import Base from './Base'
 
 export default {

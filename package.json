@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/alexblunck/react-i18n#readme",
   "dependencies": {
-    "dot-prop": "^4.2.0",
+    "object-path": "^0.11.4",
     "prop-types": "^15.6.0",
     "react": "^16.0.0"
   },
