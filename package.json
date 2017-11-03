@@ -1,0 +1,36 @@
+{
+  "name": "@blunck/react-i18n",
+  "version": "0.0.1",
+  "description": "Simple i18n in react",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://alexblunck@github.com/alexblunck/react-i18n.git"
+  },
+  "keywords": [
+    "react",
+    "i18n"
+  ],
+  "author": "Alexander Blunck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexblunck/react-i18n/issues"
+  },
+  "homepage": "https://github.com/alexblunck/react-i18n#readme",
+  "dependencies": {
+    "lodash.get": "^4.4.2",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-2": "6.24.1"
+  }
+}
