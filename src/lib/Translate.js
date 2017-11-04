@@ -6,16 +6,20 @@ import Base from './Base'
 export default class Translate extends Base {
 
     static propTypes = {
-        value: PropTypes.string.isRequired
+        value: PropTypes.string.isRequired,
+        html: PropTypes.bool,
+        className: PropTypes.string
     }
 
     render() {
-        const { className, value } = this.props
+        const { value, html, className } = this.props
         const translation = I18n.translate(value)
 
-        return (
-            <span className={className}>{translation}</span>
-        )
+        if (html) {
+            return <span className={className} dangerouslySetInnerHTML={{ __html: translation }}></span>
+        } else {
+            return <span className={className}>{translation}</span>
+        }
     }
 
 }
