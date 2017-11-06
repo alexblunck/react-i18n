@@ -5,6 +5,14 @@ export default {
     _locale: 'en',
     _translations: null,
 
+    get browserLocale() {
+        const language = window.navigator.language
+
+        if (language) {
+            return language.split('-')[0].toLowerCase()
+        }
+    },
+
     setLocale(locale) {
         this._locale = locale
         this.forceComponentUpdate()
