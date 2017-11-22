@@ -1,4 +1,7 @@
 # react-i18n
+
+[![Latest Version on NPM](https://img.shields.io/npm/v/@blunck/react-i18n.svg?style=flat-square)](https://www.npmjs.com/package/@blunck/react-i18n)
+
 Simple i18n in react.
 
 ## Installation
