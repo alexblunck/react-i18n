@@ -37,5 +37,11 @@ const MyComponent = () => {
 }
 ```
 
+## Translate Manually
+You can use the `I18n` class to translate a key manually
+```js
+const str = I18n.translate('noun.country')
+```
+
 ## Acknowledgments
 Architecture inspired by [react-i18nify](https://github.com/JSxMachina/react-i18nify)
