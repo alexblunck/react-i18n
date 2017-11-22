@@ -25,13 +25,15 @@
   "homepage": "https://github.com/alexblunck/react-i18n#readme",
   "dependencies": {
     "object-path": "^0.11.4",
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0"
+    "prop-types": "^15.6.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-preset-env": "1.6.1",
     "babel-preset-react": "6.24.1",
     "babel-preset-stage-2": "6.24.1"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0"
   }
 }
