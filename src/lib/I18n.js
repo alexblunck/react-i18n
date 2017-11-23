@@ -16,6 +16,12 @@ export default {
     setLocale(locale) {
         this._locale = locale
         this.forceComponentUpdate()
+
+        // Dispatch reactI18nDidSetLocale event
+        setTimeout(() => {
+            const event = new CustomEvent('reactI18nDidSetLocale')
+            window.dispatchEvent(event)
+        })
     },
 
     setTranslations(translations) {
