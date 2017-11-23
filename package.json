@@ -1,6 +1,6 @@
 {
   "name": "@blunck/react-i18n",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Simple i18n in react",
   "main": "dist/index.js",
   "scripts": {
