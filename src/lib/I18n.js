@@ -27,7 +27,11 @@ export default {
         const path = `${this._locale}.${key}`
         const translation = get(this._translations, path)
 
-        return translation || key
+        if (translation !== undefined) {
+            return translation
+        }
+
+        return key
     },
 
     forceComponentUpdate() {
