@@ -2,12 +2,11 @@
   "name": "@blunck/react-i18n",
   "version": "0.3.0",
   "description": "Simple i18n in react",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "babel src -d dist -w",
-    "build": "babel src -d dist",
-    "prepare": "npm run build"
+    "dev": "babel ./src -d ./lib -w",
+    "build": "babel ./src -d ./lib",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -25,15 +24,13 @@
   "homepage": "https://github.com/alexblunck/react-i18n#readme",
   "dependencies": {
     "object-path": "^0.11.4",
-    "prop-types": "^15.6.0"
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-preset-env": "1.6.1",
     "babel-preset-react": "6.24.1",
     "babel-preset-stage-2": "6.24.1"
-  },
-  "peerDependencies": {
-    "react": "^16.0.0"
   }
 }

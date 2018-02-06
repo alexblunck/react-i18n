@@ -31,7 +31,17 @@ export default {
 
     translate(key) {
         const path = `${this._locale}.${key}`
-        const translation = get(this._translations, path)
+        let translation = get(this._translations, path)
+
+        // Shortcuts
+        // If key 'a.b.c' returns object, try 'a.b.c.c'
+        if (typeof translation === 'object') {
+            const parts = path.split('.')
+            const lastPart = parts[parts.length - 1]
+            const shortcutPath = `${path}.${lastPart}`
+
+            translation = get(this._translations, shortcutPath)
+        }
 
         if (translation !== undefined) {
             return translation
