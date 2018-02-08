@@ -64,3 +64,12 @@ export const I18n = {
         Base.forceUpdateAllInstances()
     }
 }
+
+/**
+ * Helper function proxy to I18n.translate
+ *
+ * @return {String}
+ */
+export const __ = function () {
+    return I18n.translate(...arguments)
+}
