@@ -29,8 +29,18 @@ export default {
         this.forceComponentUpdate()
     },
 
-    translate(key) {
-        const path = `${this._locale}.${key}`
+    /**
+     * Return translation for a given key.
+     *
+     * @param  {String} key
+     * @param  {String} [locale] - translate to specific locale
+     *
+     * @return {String} Translation or key if translation can't be found
+     */
+    translate(key, locale) {
+        locale = locale || this._locale
+
+        const path = `${locale}.${key}`
         let translation = get(this._translations, path)
 
         // Shortcuts
