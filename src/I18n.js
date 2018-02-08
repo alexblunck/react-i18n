@@ -1,7 +1,7 @@
 import { get } from 'object-path'
-import Base from './Base'
+import { Base } from './Base'
 
-export default {
+export const I18n = {
     _locale: 'en',
     _translations: null,
 

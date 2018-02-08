@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import I18n from './I18n'
-import Base from './Base'
+import { I18n } from './I18n'
+import { Base } from './Base'
 
-export default class Translate extends Base {
+export class Translate extends Base {
 
     static propTypes = {
         value: PropTypes.string.isRequired,
