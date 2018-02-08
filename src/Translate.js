@@ -7,13 +7,14 @@ export default class Translate extends Base {
 
     static propTypes = {
         value: PropTypes.string.isRequired,
+        locale: PropTypes.string,
         html: PropTypes.bool,
         className: PropTypes.string
     }
 
     render() {
-        const { value, html, className } = this.props
-        const translation = I18n.translate(value)
+        const { value, locale, html, className } = this.props
+        const translation = I18n.translate(value, locale)
 
         if (html) {
             return <span className={className} dangerouslySetInnerHTML={{ __html: translation }}></span>
