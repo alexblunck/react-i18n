@@ -46,5 +46,12 @@ You can use the `I18n` class to translate a key manually
 const str = I18n.translate('noun.country')
 ```
 
+Alternatively you can use the `__` helper function
+```js
+import { __ } from '@blunck/react-i18n'
+
+const str = __('noun.country')
+```
+
 ## Acknowledgments
 Architecture inspired by [react-i18nify](https://github.com/JSxMachina/react-i18nify)
