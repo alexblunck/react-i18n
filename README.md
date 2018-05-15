@@ -53,5 +53,15 @@ import { __ } from '@blunck/react-i18n'
 const str = __('noun.country')
 ```
 
+## I18nProvider
+Use the `I18nProvider` component to access the locale from within your own components
+```js
+import { I18nProvider } from '@blunck/react-i18n'
+
+<I18nProvider render={locale => (
+    <span>The current locale is {locale}</span>
+)} />
+```
+
 ## Acknowledgments
 Architecture inspired by [react-i18nify](https://github.com/JSxMachina/react-i18nify)
