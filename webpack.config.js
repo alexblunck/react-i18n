@@ -12,7 +12,7 @@ module.exports = function (env, argv) {
             path: path.resolve(__dirname, 'lib'),
             filename: `react-i18n.js`,
             library: 'reactI18n',
-            libraryTarget: 'umd'
+            libraryTarget: 'commonjs2'
         },
         devtool: devtool,
         module: {
